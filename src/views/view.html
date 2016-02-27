@@ -1,0 +1,8 @@
+<div>
+  <a ng-show="vm.display(vm.gif)" target="_blank" href="{{vm.gif.url}}">
+    <img src="{{vm.gif.image_url}}" alt="random gif image" class="img-responsive img-thumbnail">
+  </a>
+  <div ng-show="!vm.display(vm.gif)" class="alert alert-danger">
+    Could not find gifs with the tag <strong>{{config.tag}}</strong>
+  </div>
+</div>
